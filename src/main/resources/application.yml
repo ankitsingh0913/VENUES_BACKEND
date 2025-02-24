@@ -1,0 +1,31 @@
+spring:
+  mvc:
+    favicon:
+      enabled: false
+#  redis:
+#    host: ${Redis_Host}
+#    port: ${Redis_Port}
+  application:
+    name: Venues
+  data:
+    mongodb:
+      uri: mongodb+srv://ankitsingh11:root@cluster0.fvbrl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      database: Venues
+      auto-index-creation: true
+  main:
+    allow-circular-references: true
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+#  mail:
+#    host: ${SMTP_HOST}
+#    port: ${SMTP_PORT}
+#    username: ${SMTP_USERNAME}
+#    password: ${SMTP_PASSWORD}
+#    properties:
+#      mail:
+#        smtp:
+#          auth: true
+#          starttls:
+#            enable: true
