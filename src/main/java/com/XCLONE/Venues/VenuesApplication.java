@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/")
 @EnableTransactionManagement
 @SpringBootApplication
-@EnableMongoRepositories(basePackages = "com.XCLONE.Venues.Client.Repository")
 public class VenuesApplication {
 
 	public static void main(String[] args) {
